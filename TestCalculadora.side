@@ -1,0 +1,109 @@
+{
+  "id": "ddbe09cc-a381-49ec-909d-4c1ad244b0ab",
+  "version": "2.0",
+  "name": "TestCalculadora",
+  "url": "http://127.0.0.1/seleniumteste.html",
+  "tests": [{
+    "id": "216251b1-4a81-468a-b238-733d2f58a928",
+    "name": "testSomaDoisDecimaisPositivos",
+    "commands": [{
+      "id": "d857efe0-0b83-4e75-9110-73da2d3c1e1e",
+      "comment": "",
+      "command": "open",
+      "target": "/seleniumteste.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0942bd89-2c32-44ed-a78e-b744c65507e0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8766edd3-ea72-48bd-b8b9-6e2080880af2",
+      "comment": "",
+      "command": "click",
+      "target": "id=vlr1",
+      "targets": [
+        ["id=vlr1", "id"],
+        ["css=#vlr1", "css:finder"],
+        ["xpath=//input[@id='vlr1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4b6d71c-5471-4bbf-88e6-283b487ac49b",
+      "comment": "",
+      "command": "type",
+      "target": "id=vlr1",
+      "targets": [
+        ["id=vlr1", "id"],
+        ["css=#vlr1", "css:finder"],
+        ["xpath=//input[@id='vlr1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2.5"
+    }, {
+      "id": "3d7c2a1e-9d82-4f83-9334-a5b08b2f11ea",
+      "comment": "",
+      "command": "click",
+      "target": "id=vlr2",
+      "targets": [
+        ["id=vlr2", "id"],
+        ["css=#vlr2", "css:finder"],
+        ["xpath=//input[@id='vlr2']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36c70808-8223-4f64-99d2-a83260f12002",
+      "comment": "",
+      "command": "type",
+      "target": "id=vlr2",
+      "targets": [
+        ["id=vlr2", "id"],
+        ["css=#vlr2", "css:finder"],
+        ["xpath=//input[@id='vlr2']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "3.2"
+    }, {
+      "id": "8d936d44-4931-4fd9-9724-87d1398f6797",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Calcula')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e6798b1-5722-4fde-b9a6-c8fa05f465ca",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=resultadoErrado",
+      "targets": [],
+      "value": "3.5"
+    }, {
+      "id": "e0a28772-86f0-42c0-8e64-13087f9566ea",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=resultadoCorreto",
+      "targets": [],
+      "value": "3.5"
+    }]
+  }],
+  "suites": [{
+    "id": "61d78f72-d8e7-4e7c-845e-8b67dd8df33a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["216251b1-4a81-468a-b238-733d2f58a928"]
+  }],
+  "urls": ["http://127.0.0.1/", "http://127.0.0.1/seleniumteste.html"],
+  "plugins": []
+}
